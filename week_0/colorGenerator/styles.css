@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.bar {
+    flex: 1;
+    background: linear-gradient(to bottom, #ffffff, #000000);
+    border-right: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: border-color 5s ease;
+}
+
+/* change single color Button */
+.colorBtn {
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 0;
+}
+
+.colorBtn:hover {
+    transform: scale(1.1);
+}
+
+/* Color Text Presentation */
+.colorText {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+/* Change all colors Button */
+#changeAllBtn {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 0;
+    border: 1px solid white;
+    animation: borderAnimation 5s infinite;
+}
+
+#changeAllBtn:hover {
+    background-color: #2d7a31;
+}
+
+
+/* Border Animation */
+@keyframes borderAnimation {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: black;
+    }
+
+    100% {
+        border-color: white;
+    }
+}
+
+.animatedBorder {
+    animation: borderAnimation 5s infinite;
+}
