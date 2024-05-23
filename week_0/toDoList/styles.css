@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    box-sizing: border-box;
+}
+
+span {
+    color: #ff0019;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pomodoro-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+label {
+    text-align: center;
+}
+
+#start-pomodoro-btn{
+    display: flex;
+    background-color: #28a745;
+}
+
+#start-pomodoro-btn:hover{
+    background-color: #1e7c34;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 60%;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button.toggle-status, button.delete {
+    min-width: 80px;
+}
+
+button.toggle-status {
+    background-color: #28a745;
+}
+
+button.toggle-status.complete {
+    background-color: #6c757d;
+}
+
+button.delete {
+    background-color: #e02323;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
