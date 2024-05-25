@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    // Todo o código JavaScript aqui
     document.getElementById('start-pomodoro-btn').addEventListener('click', startPomodoro);
     document.getElementById('add-task-btn').addEventListener('click', addTask);
 
