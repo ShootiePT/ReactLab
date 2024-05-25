@@ -65,17 +65,19 @@ h1 {
 }
 
 .card-content {
-    padding: 15px;
+    padding: 2px;
 }
 
 .card-title {
     font-size: 18px;
-    margin: 0 0 10px;
+    margin: 2px;
 }
 
 .card-country {
     color: #777;
     font-size: 14px;
+    margin: 0px;
+    padding-bottom: 5px;
 }
 
 .load-more {
