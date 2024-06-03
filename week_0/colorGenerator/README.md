@@ -6,5 +6,6 @@ To experiment a bit with CSS animations, I added an effect where the borders of 
 
 Below is an image showcasing the result of my exercise:
 
-<img src="images/start.jpg" style="width: 900px; height: 500px">
-<img src="images/gen.jpg" style="width: 900px; height: 500px">
+<img src="images/start.jpg" style="width: 500px">
+<hr>
+<img src="images/gen.jpg" style="width: 500px">

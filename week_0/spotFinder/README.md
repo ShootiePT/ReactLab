@@ -6,6 +6,8 @@ One additional feature I'm planning to implement is replacing the load more butt
 
 Below is an image showcasing the result of my Spot Finder app:
 
-<img src="resources/readme1.jpg">
-<img src="resources/readme2.jpg">
-<img src="resources/readme3.jpg">
+<img src="resources/readme1.jpg" style="width: 500px">
+<hr>
+<img src="resources/readme2.jpg" style="width: 500px">
+<hr>
+<img src="resources/readme3.jpg" style="width: 500px">

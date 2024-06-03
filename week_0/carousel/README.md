@@ -6,5 +6,6 @@ Despite these difficulties, I am committed to mastering this feature and ensurin
 
 Below is an image showcasing the current state of my carousel project:
 
-<img src="resources/readme1.jpg">
-<img src="resources/readme2.jpg">
+<img src="resources/readme1.jpg" style="width: 500px">
+<hr>
+<img src="resources/readme2.jpg" style="width: 500px">
