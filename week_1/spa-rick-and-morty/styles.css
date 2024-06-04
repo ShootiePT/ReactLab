@@ -1,0 +1,259 @@
+:root {
+    --white: #fff;
+    --blue: #02afc5;
+    --black: #0d0d0d;
+    --rick-and-morty-font: 'Rick and Morty';
+    --adult-swim-font: 'Adult Swim';
+    --shadow: 3px 3px 3px var(--black);
+}
+
+@font-face {
+    font-family: 'Rick and Morty';
+    src: url('assets/fonts/rick_and_morty.ttf');
+}
+@font-face {
+    font-family: 'Adult Swim';
+    src: url('assets/fonts/adult_swim.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+    font-family: var(--rick-and-morty-font);
+}
+
+p, a, ul, li {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--black);
+}
+
+button {
+    display: inline-block;
+    font-family: var(--adult-swim-font);
+    font-size: 2rem;
+    padding: 15px;
+    margin: 25px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#container {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.btn-light {
+    background: var(--white);
+    color: var(--black);
+}
+
+.btn-dark {
+    background: var(--black);
+    color: var(--white);
+}
+
+.btn-light:hover {
+    color: var(--white);
+    background: var(--black);
+}
+.btn-dark:hover {
+    color: var(--black);
+    background: var(--white);
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: 420px;
+    max-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid var(--blue);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    bottom: -125px;
+    margin-left: -125px;
+    border-radius: 50%;
+    border: 5px solid var(--blue);
+}
+
+.title {
+    color: var(--white);
+    font-size: 8rem;
+    text-align: center;
+    width: 100%;
+    text-shadow: var(--shadow);
+}
+
+.site-nav {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    height: 100px;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav i {
+    height: 50px;
+    line-height: 50px;
+    color: var(--blue);
+    font-size: 50px;
+}
+
+.site-nav input {
+    background: var(--blue);
+    opacity: 0.7;
+    padding: 16px;
+    text-transform: uppercase;
+    font-family: var(--adult-swim-font);
+    font-size: 1.4em;
+    border-radius: 20px;
+    color: var(--white);
+    border: none;
+    text-align: center;
+    margin: 0 30px;
+    outline: none;
+    box-shadow: var(--shadow);
+}
+
+.site-nav input::placeholder {
+    color: var(--black);
+}
+
+.characters {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.characters li {
+    text-align: center;
+    background: var(--blue);
+    max-width: 350px;
+    margin: 25px;
+    display: inline-block;
+    background-image: var(--blue);
+}
+
+.characters a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    box-shadow: var(--shadow);
+}
+
+.characters img {
+    width: 100%;
+}
+
+.characters h3 {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-shadow: var(--shadow);
+}
+
+.details {
+    text-align: center;
+    font-size: 2.25rem;
+    background: var(--blue);
+    color: var(--white);
+    min-height: calc(100vh - 420px);
+    text-shadow: var(--shadow);
+}
+
+.details p {
+    font-family: var(--adult-swim-font);
+    text-shadow: var(--shadow);
+    margin: 0 0 25px;
+}
+
+.details p:first-of-type {
+    padding-top: 125px;
+}
+
+.error {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--blue);
+    height: calc(100vh - 420px);
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: 125px;
+    text-align: center;
+}
+
+.error h1 {
+    margin: 0 0 50px;
+}
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+}
+
+.loading-img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -150px;
+}
+
+.loading-message {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    color: var(--black);
+}
+
+.rotate {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
