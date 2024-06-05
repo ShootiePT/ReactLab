@@ -11,9 +11,9 @@ This is a Single Page Application (SPA) project developed in JavaScript, CSS, an
 ## Features
 
 - [x] Consuming Rick and Morty API
-- [ ] Displaying character information
-- [ ]
-- [ ] 
+- [x] Displaying character cards
+- [x] Displaying character information
+- [x] Display a character not found page
 
 ## Project Structure
 
@@ -22,18 +22,27 @@ The project follows a Model-View-Controller (MVC) architecture, with separation 
 ```plaintext
 ├── index.html
 ├── styles.css
-├── js/
-│   ├── app.js
-│   ├── models/
-│   │   └── CharacterModel.js
-│   ├── views/
-│   │   └── CharacterView.js
-│   ├── controllers/
-│   │   └── CharacterController.js
+├── navigation.js
+├── routes.js
+├── script.js
+├── assets/
+│   └── fonts/
+├── views/
 │   └── components/
-│       └── CharacterComponent.js
-├── images/
-│   └── screenshot.png
+│   │   └── banner.js
+│   │   └── button.js
+│   │   └── navbar.js
+│   │   └── Character-grid.js
+│   └── pages/
+│       └── character-details.js
+│       └── character-list.js
+│       └── loading.js
+│       └── error.js
+├── service/
+│   └── api.js
+├── controller/
+│   └── details.js
+│   └── list.js
 └── README.md
 ```
 
