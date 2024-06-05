@@ -53,7 +53,6 @@ The project follows a Model-View-Controller (MVC) architecture, with separation 
 
 ## Screenshot
 
-![Application Screenshot](screenshot.png)
 
 ## Contribution
 

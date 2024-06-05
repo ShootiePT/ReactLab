@@ -11,7 +11,6 @@ export default async function () {
         const data = await getCharacterList(getParameters());
         characterList(data);
     } catch (err) {
-        console.log(err);
         error();
     }
 }

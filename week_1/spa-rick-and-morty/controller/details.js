@@ -11,7 +11,6 @@ export default async function init() {
         const data = await getCharacter(getPath());
         characterDetails(data);
     } catch (err) {
-        console.log(err);
         error();
     }
 }
